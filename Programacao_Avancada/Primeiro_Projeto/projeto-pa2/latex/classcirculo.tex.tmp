@@ -1,0 +1,84 @@
+\hypertarget{classcirculo}{}\section{circulo Class Reference}
+\label{classcirculo}\index{circulo@{circulo}}
+
+
+The circulo class É herdeira da classe figura e serve para desenhar uma figura de um círculo.  
+
+
+
+
+{\ttfamily \#include $<$circulo.\+h$>$}
+
+
+
+Inheritance diagram for circulo\+:
+% FIG 0
+
+
+Collaboration diagram for circulo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcirculo_a43b18d165eb4f85a32ee8d1e685019f7}{circulo} ()\hypertarget{classcirculo_a43b18d165eb4f85a32ee8d1e685019f7}{}\label{classcirculo_a43b18d165eb4f85a32ee8d1e685019f7}
+
+\begin{DoxyCompactList}\small\item\em circulo é o contrutor da classe. \end{DoxyCompactList}\item 
+void \hyperlink{classcirculo_a97ee154b479969b26f981f7883c69d1f}{draw} (\hyperlink{classScreen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em draw serve para desenhar a figura. \end{DoxyCompactList}\item 
+void \hyperlink{classcirculo_aa8b55cf065da82bc17930444e08a1bc3}{pixel} (int x, int y, \hyperlink{classScreen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em pixel serve para setar o pixel do brush na matriz \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The circulo class É herdeira da classe figura e serve para desenhar uma figura de um círculo. 
+
+\subsection{Member Function Documentation}
+\index{circulo@{circulo}!draw@{draw}}
+\index{draw@{draw}!circulo@{circulo}}
+\subsubsection[{\texorpdfstring{draw(\+Screen \&t)}{draw(Screen &t)}}]{\setlength{\rightskip}{0pt plus 5cm}void circulo\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classcirculo_a97ee154b479969b26f981f7883c69d1f}{}\label{classcirculo_a97ee154b479969b26f981f7883c69d1f}
+
+
+draw serve para desenhar a figura. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & é um objeto da classe \hyperlink{classScreen}{Screen}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classfigura_a0afddf09965208311924d68e7a434f1d}{figura}.
+
+\index{circulo@{circulo}!pixel@{pixel}}
+\index{pixel@{pixel}!circulo@{circulo}}
+\subsubsection[{\texorpdfstring{pixel(int x, int y, Screen \&t)}{pixel(int x, int y, Screen &t)}}]{\setlength{\rightskip}{0pt plus 5cm}void circulo\+::pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf Screen} \&}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classcirculo_aa8b55cf065da82bc17930444e08a1bc3}{}\label{classcirculo_aa8b55cf065da82bc17930444e08a1bc3}
+
+
+pixel serve para setar o pixel do brush na matriz 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & valor \char`\"{}x\char`\"{} da borda do círculo. \\
+\hline
+{\em y} & valor \char`\"{}y\char`\"{} da borda do círculo. \\
+\hline
+{\em t} & é um objeto da classe \hyperlink{classScreen}{Screen}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+circulo.\+h\item 
+circulo.\+cpp\end{DoxyCompactItemize}

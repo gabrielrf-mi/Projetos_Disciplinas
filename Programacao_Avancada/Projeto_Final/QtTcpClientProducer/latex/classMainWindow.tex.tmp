@@ -1,0 +1,116 @@
+\hypertarget{classMainWindow}{}\section{Main\+Window Class Reference}
+\label{classMainWindow}\index{Main\+Window@{Main\+Window}}
+
+
+\hyperlink{classMainWindow}{Main\+Window} recebe e trata os dados recebidos no servidor.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect} ()\hypertarget{classMainWindow_ac5b669957c442b6eb68573dacfce33e1}{}\label{classMainWindow_ac5b669957c442b6eb68573dacfce33e1}
+
+\begin{DoxyCompactList}\small\item\em tcp\+Connect é uma função que serve para conectar ao servidor. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect} ()\hypertarget{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}{}\label{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect()} é uma função que serve para desconectar ao servidor. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_acd799f347ce03f1c6539107710fabc92}{start\+Time} ()\hypertarget{classMainWindow_acd799f347ce03f1c6539107710fabc92}{}\label{classMainWindow_acd799f347ce03f1c6539107710fabc92}
+
+\begin{DoxyCompactList}\small\item\em start\+Time inicia o tempo. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a9695c8ef6d82d87379ee1600e7bb5fce}{stop\+Time} ()\hypertarget{classMainWindow_a9695c8ef6d82d87379ee1600e7bb5fce}{}\label{classMainWindow_a9695c8ef6d82d87379ee1600e7bb5fce}
+
+\begin{DoxyCompactList}\small\item\em stop\+Time para o tempo iniciado na função \char`\"{}start\+Time\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data} ()\hypertarget{classMainWindow_afdfeb13ec363b0eb8ecacaf0aa13b605}{}\label{classMainWindow_afdfeb13ec363b0eb8ecacaf0aa13b605}
+
+\begin{DoxyCompactList}\small\item\em put\+Data inicializa os dados no servidor. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a303aa5bc4124426ed8024b2d106c5916}{Time} (int \+\_\+timming)
+\begin{DoxyCompactList}\small\item\em Time serve para receber um tempo novo e excluir o anterior. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classMainWindow}{Main\+Window} é o construtor da classe e onde é conectada a parte gráfica com o código. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_aaa425b1554af3c1f58cc70b4815082ae}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event gerencia a função do \char`\"{}\+Timer\+Event\char`\"{} padrão, que diz o tempo de exencução do programa. A cada quantidade de tempo que o usuário forneceu, ou o \char`\"{}\+Timer\+Event\char`\"{} padrão, a função inicializa um dado no servidor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classMainWindow}{Main\+Window} recebe e trata os dados recebidos no servidor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & é um ponteiro q serve para tratar/modificar/pegar características dos objetos widgets. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{Main\+Window(\+Q\+Widget $\ast$parent=0)}{MainWindow(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{}\label{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+\hyperlink{classMainWindow}{Main\+Window} é o construtor da classe e onde é conectada a parte gráfica com o código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & é um ponteiro do tipo Q\+Widget que serve para fornecer propriedades da janela. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Main\+Window@{Main\+Window}!Time@{Time}}
+\index{Time@{Time}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{Time}{Time}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::\+Time (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+timming}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classMainWindow_a303aa5bc4124426ed8024b2d106c5916}{}\label{classMainWindow_a303aa5bc4124426ed8024b2d106c5916}
+
+
+Time serve para receber um tempo novo e excluir o anterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+timming} & é o tempo novo fornecido pelo usuário. \\
+\hline
+\end{DoxyParams}
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{timer\+Event(\+Q\+Timer\+Event $\ast$event)}{timerEvent(QTimerEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::timer\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Timer\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classMainWindow_aaa425b1554af3c1f58cc70b4815082ae}{}\label{classMainWindow_aaa425b1554af3c1f58cc70b4815082ae}
+
+
+timer\+Event gerencia a função do \char`\"{}\+Timer\+Event\char`\"{} padrão, que diz o tempo de exencução do programa. A cada quantidade de tempo que o usuário forneceu, ou o \char`\"{}\+Timer\+Event\char`\"{} padrão, a função inicializa um dado no servidor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & é um ponteiro do tipo Q\+Time\+Event que serve para fornecer propriedades do timer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

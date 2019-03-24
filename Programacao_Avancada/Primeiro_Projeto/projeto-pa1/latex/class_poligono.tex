@@ -1,0 +1,132 @@
+\hypertarget{class_poligono}{}\section{Poligono Class Reference}
+\label{class_poligono}\index{Poligono@{Poligono}}
+
+
+The Pologono class serve para realizar e manipular pontos de um poligono convexo.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+Inheritance diagram for Poligono\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_poligono}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poligono_a9311a9a1496878c09c8508b3636e2870}\label{class_poligono_a9311a9a1496878c09c8508b3636e2870}} 
+\mbox{\hyperlink{class_poligono_a9311a9a1496878c09c8508b3636e2870}{Poligono}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_poligono}{Poligono}} é o construtor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_a3fb101362b44fb9682e33cba0d3cd5ed}{insert}} (\mbox{\hyperlink{class_point}{Point}} vertice1)
+\begin{DoxyCompactList}\small\item\em insert é uma função da classe que serve para inserir um ponto do poligono. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_poligono_a81116a54985e6e897bd785268ba35a6e}{recupera}} (void)
+\begin{DoxyCompactList}\small\item\em recupera é uma função da classe que serve para recuperar o numero de vertices do poligono. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_poligono_a9b7cb6c339f78a5b9432494d8f94816c}{area}} (void)
+\begin{DoxyCompactList}\small\item\em area é uma função da classe que serve para calcular a area do poligono convexo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_a48b40bd2284a5c7ee5253f2070052046}{transladar}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em transladar é uma função da classe que serve para translatar todos os pontos do poligono. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_a2d58ed88cb9be91bb0047984dc1dd054}{rotacionar}} (float teta, \mbox{\hyperlink{class_point}{Point}} p1)
+\begin{DoxyCompactList}\small\item\em rotacionar é uma classe que serve para rotacionar o poligono a partir de um valor em radianos de angulo teta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poligono_af61200b446e9fda58a42355eec49d433}\label{class_poligono_af61200b446e9fda58a42355eec49d433}} 
+void \mbox{\hyperlink{class_poligono_af61200b446e9fda58a42355eec49d433}{imprimir}} (void)
+\begin{DoxyCompactList}\small\item\em imprime é uma função da classe que serve para imprimir o conjunto de pontos do poligono na tela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poligono_a18179d267bdf366f6bb00a4e1b16f1d7}\label{class_poligono_a18179d267bdf366f6bb00a4e1b16f1d7}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries vertices} \mbox{[}100\mbox{]}
+\item 
+\mbox{\Hypertarget{class_poligono_af9259ab305f65ba3ac2fa256d72cc047}\label{class_poligono_af9259ab305f65ba3ac2fa256d72cc047}} 
+int {\bfseries nv}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Pologono class serve para realizar e manipular pontos de um poligono convexo. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_poligono_a9b7cb6c339f78a5b9432494d8f94816c}\label{class_poligono_a9b7cb6c339f78a5b9432494d8f94816c}} 
+\index{Poligono@{Poligono}!area@{area}}
+\index{area@{area}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily float Poligono\+::area (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+area é uma função da classe que serve para calcular a area do poligono convexo. 
+
+\begin{DoxyReturn}{Returns}
+o valor da área calculada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poligono_a3fb101362b44fb9682e33cba0d3cd5ed}\label{class_poligono_a3fb101362b44fb9682e33cba0d3cd5ed}} 
+\index{Poligono@{Poligono}!insert@{insert}}
+\index{insert@{insert}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Poligono\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{vertice1 }\end{DoxyParamCaption})}
+
+
+
+insert é uma função da classe que serve para inserir um ponto do poligono. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice1} & é o ponto a ser enserido. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poligono_a81116a54985e6e897bd785268ba35a6e}\label{class_poligono_a81116a54985e6e897bd785268ba35a6e}} 
+\index{Poligono@{Poligono}!recupera@{recupera}}
+\index{recupera@{recupera}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{recupera()}{recupera()}}
+{\footnotesize\ttfamily int Poligono\+::recupera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+recupera é uma função da classe que serve para recuperar o numero de vertices do poligono. 
+
+\begin{DoxyReturn}{Returns}
+número de vertices. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poligono_a2d58ed88cb9be91bb0047984dc1dd054}\label{class_poligono_a2d58ed88cb9be91bb0047984dc1dd054}} 
+\index{Poligono@{Poligono}!rotacionar@{rotacionar}}
+\index{rotacionar@{rotacionar}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{rotacionar()}{rotacionar()}}
+{\footnotesize\ttfamily void Poligono\+::rotacionar (\begin{DoxyParamCaption}\item[{float}]{teta,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1 }\end{DoxyParamCaption})}
+
+
+
+rotacionar é uma classe que serve para rotacionar o poligono a partir de um valor em radianos de angulo teta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em teta} & o valor em radiano para a rotação. \\
+\hline
+{\em p1} & ponto base de rotação do poligono. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poligono_a48b40bd2284a5c7ee5253f2070052046}\label{class_poligono_a48b40bd2284a5c7ee5253f2070052046}} 
+\index{Poligono@{Poligono}!transladar@{transladar}}
+\index{transladar@{transladar}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{transladar()}{transladar()}}
+{\footnotesize\ttfamily void Poligono\+::transladar (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+transladar é uma função da classe que serve para translatar todos os pontos do poligono. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & quantidade a ser transladada no eixo x. \\
+\hline
+{\em b} & quantidade a ser transladada no eixo y. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+poligono.\+h\item 
+poligono.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classPlottet}{}\section{Plottet Class Reference}
+\label{classPlottet}\index{Plottet@{Plottet}}
+
+
+The \hyperlink{classPlottet}{Plottet} class exibe, de forma gráfica, os dados recebidos pelo servidor.  
+
+
+
+
+{\ttfamily \#include $<$plottet.\+h$>$}
+
+
+
+Inheritance diagram for Plottet\+:
+% FIG 0
+
+
+Collaboration diagram for Plottet\+:
+% FIG 1
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPlottet_a7016967c746c5ed5577402bf338e9009}{setdata} (vector$<$ float $>$ tempo, vector$<$ float $>$ valor)
+\begin{DoxyCompactList}\small\item\em setdata recebe os dois vetores da mainwindow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlottet_af5cf596a782541bb858d5b006e3192ed}{Plottet} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPlottet}{Plottet}. \end{DoxyCompactList}\item 
+void \hyperlink{classPlottet_aed7fa997b5a5428820741d12040e0951}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em paint\+Event desenha no objeto widget. \end{DoxyCompactList}\item 
+void \hyperlink{classPlottet_ab956470d24253af22b1ebe0e18523abf}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event gerencia a função do \char`\"{}\+Timer\+Event\char`\"{} padrão, que diz o tempo de exencução do programa. A cada quantidade de tempo que o usuário forneceu, ou o \char`\"{}\+Timer\+Event\char`\"{} padrão, a função inicializa um dado no servidor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPlottet}{Plottet} class exibe, de forma gráfica, os dados recebidos pelo servidor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Plottet@{Plottet}!Plottet@{Plottet}}
+\index{Plottet@{Plottet}!Plottet@{Plottet}}
+\subsubsection[{\texorpdfstring{Plottet(\+Q\+Widget $\ast$parent=nullptr)}{Plottet(QWidget *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Plottet\+::\+Plottet (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classPlottet_af5cf596a782541bb858d5b006e3192ed}{}\label{classPlottet_af5cf596a782541bb858d5b006e3192ed}
+
+
+\hyperlink{classPlottet}{Plottet}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Plottet@{Plottet}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Plottet@{Plottet}}
+\subsubsection[{\texorpdfstring{paint\+Event(\+Q\+Paint\+Event $\ast$event)}{paintEvent(QPaintEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Plottet\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classPlottet_aed7fa997b5a5428820741d12040e0951}{}\label{classPlottet_aed7fa997b5a5428820741d12040e0951}
+
+
+paint\+Event desenha no objeto widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\index{Plottet@{Plottet}!setdata@{setdata}}
+\index{setdata@{setdata}!Plottet@{Plottet}}
+\subsubsection[{\texorpdfstring{setdata}{setdata}}]{\setlength{\rightskip}{0pt plus 5cm}void Plottet\+::setdata (
+\begin{DoxyParamCaption}
+\item[{vector$<$ float $>$}]{tempo, }
+\item[{vector$<$ float $>$}]{valor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{classPlottet_a7016967c746c5ed5577402bf338e9009}{}\label{classPlottet_a7016967c746c5ed5577402bf338e9009}
+
+
+setdata recebe os dois vetores da mainwindow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tempo} & vetor de tempos recebidos. \\
+\hline
+{\em valor} & vetor de valores recebidos. \\
+\hline
+\end{DoxyParams}
+\index{Plottet@{Plottet}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Plottet@{Plottet}}
+\subsubsection[{\texorpdfstring{timer\+Event(\+Q\+Timer\+Event $\ast$event)}{timerEvent(QTimerEvent *event)}}]{\setlength{\rightskip}{0pt plus 5cm}void Plottet\+::timer\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Timer\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classPlottet_ab956470d24253af22b1ebe0e18523abf}{}\label{classPlottet_ab956470d24253af22b1ebe0e18523abf}
+
+
+timer\+Event gerencia a função do \char`\"{}\+Timer\+Event\char`\"{} padrão, que diz o tempo de exencução do programa. A cada quantidade de tempo que o usuário forneceu, ou o \char`\"{}\+Timer\+Event\char`\"{} padrão, a função inicializa um dado no servidor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & é um ponteiro do tipo Q\+Time\+Event que serve para fornecer propriedades do timer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+plottet.\+h\item 
+plottet.\+cpp\end{DoxyCompactItemize}

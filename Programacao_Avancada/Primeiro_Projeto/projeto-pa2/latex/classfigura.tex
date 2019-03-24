@@ -1,0 +1,173 @@
+\hypertarget{classfigura}{}\section{figura Class Reference}
+\label{classfigura}\index{figura@{figura}}
+
+
+The figura class É uma classe base para as demais. Ela quem define a classe abstrata.  
+
+
+
+
+{\ttfamily \#include $<$figura.\+h$>$}
+
+
+
+Inheritance diagram for figura\+:
+% FIG 0
+
+
+Collaboration diagram for figura\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfigura_a792b267327a4fe9da4932417a1f12a1f}{figura} ()\hypertarget{classfigura_a792b267327a4fe9da4932417a1f12a1f}{}\label{classfigura_a792b267327a4fe9da4932417a1f12a1f}
+
+\begin{DoxyCompactList}\small\item\em figura é o construtor da classe. \end{DoxyCompactList}\item 
+void \hyperlink{classfigura_a2a46e5a0a3e26b17da3c16067fb42ba0}{setparametrosretangulo} (int \+\_\+xr, int \+\_\+yr, int \+\_\+altura, int \+\_\+largura, int \+\_\+fillmodeR)
+\begin{DoxyCompactList}\small\item\em setparametrosretangulo seta os parâmetros necessários do retângulo. \end{DoxyCompactList}\item 
+void \hyperlink{classfigura_a9b64c9372d040df37dc71c61f148fd57}{setparametrosreta} (int \+\_\+x, int \+\_\+y, int \+\_\+x2, int \+\_\+y2)
+\begin{DoxyCompactList}\small\item\em setparametrosreta seta os parâmetros necessários da reta. \end{DoxyCompactList}\item 
+void \hyperlink{classfigura_a1f5fa6ec7092552181e83725e43d7e23}{setparametroscirculo} (int \+\_\+xr, int \+\_\+yr, int \+\_\+raio, int \+\_\+fillmodeC)
+\begin{DoxyCompactList}\small\item\em setparametroscirculo seta os parâmetros necessários do círculo. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classfigura_a0afddf09965208311924d68e7a434f1d}{draw} (\hyperlink{classScreen}{Screen} \&t)=0
+\begin{DoxyCompactList}\small\item\em draw serve para desenhar a figura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classponto}{ponto} {\bfseries p1}\hypertarget{classfigura_a9ae5341fbe21ecd3dd9f895ed9e4a78e}{}\label{classfigura_a9ae5341fbe21ecd3dd9f895ed9e4a78e}
+
+\item 
+\hyperlink{classponto}{ponto} {\bfseries p2}\hypertarget{classfigura_ab665a3b5fccd2d21575e856fcf201b5f}{}\label{classfigura_ab665a3b5fccd2d21575e856fcf201b5f}
+
+\item 
+int {\bfseries altura}\hypertarget{classfigura_a4fc32b66b8e8d705f5d5c2f57661964a}{}\label{classfigura_a4fc32b66b8e8d705f5d5c2f57661964a}
+
+\item 
+int {\bfseries largura}\hypertarget{classfigura_a5815a007e56f07b5d34e4d17e6de6a26}{}\label{classfigura_a5815a007e56f07b5d34e4d17e6de6a26}
+
+\item 
+int {\bfseries xr}\hypertarget{classfigura_a94e13245981b5c337ed7d57440336547}{}\label{classfigura_a94e13245981b5c337ed7d57440336547}
+
+\item 
+int {\bfseries yr}\hypertarget{classfigura_a6e7003ca706d3a5fdc1ce90e890f8e0e}{}\label{classfigura_a6e7003ca706d3a5fdc1ce90e890f8e0e}
+
+\item 
+int {\bfseries raio}\hypertarget{classfigura_ac35643cee4e1b10b14596844f7cbabd0}{}\label{classfigura_ac35643cee4e1b10b14596844f7cbabd0}
+
+\item 
+int {\bfseries fillmodeC}\hypertarget{classfigura_a50ed7cd56e8b5fa4bc782af88d7312c2}{}\label{classfigura_a50ed7cd56e8b5fa4bc782af88d7312c2}
+
+\item 
+int {\bfseries fillmodeR}\hypertarget{classfigura_a1e15a50e506113d3fb2fed7b49c7cc7e}{}\label{classfigura_a1e15a50e506113d3fb2fed7b49c7cc7e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The figura class É uma classe base para as demais. Ela quem define a classe abstrata. 
+
+\subsection{Member Function Documentation}
+\index{figura@{figura}!draw@{draw}}
+\index{draw@{draw}!figura@{figura}}
+\subsubsection[{\texorpdfstring{draw(\+Screen \&t)=0}{draw(Screen &t)=0}}]{\setlength{\rightskip}{0pt plus 5cm}void figura\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classfigura_a0afddf09965208311924d68e7a434f1d}{}\label{classfigura_a0afddf09965208311924d68e7a434f1d}
+
+
+draw serve para desenhar a figura. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & é um objeto da classe \hyperlink{classScreen}{Screen}. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classreta_ae3df392441aa1e3cba42de1e4b7c8beb}{reta}, \hyperlink{classcirculo_a97ee154b479969b26f981f7883c69d1f}{circulo}, and \hyperlink{classretangulo_a8c037b5ee941ce662e374bf926529814}{retangulo}.
+
+\index{figura@{figura}!setparametroscirculo@{setparametroscirculo}}
+\index{setparametroscirculo@{setparametroscirculo}!figura@{figura}}
+\subsubsection[{\texorpdfstring{setparametroscirculo(int \+\_\+xr, int \+\_\+yr, int \+\_\+raio, int \+\_\+fillmode\+C)}{setparametroscirculo(int _xr, int _yr, int _raio, int _fillmodeC)}}]{\setlength{\rightskip}{0pt plus 5cm}void figura\+::setparametroscirculo (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+xr, }
+\item[{int}]{\+\_\+yr, }
+\item[{int}]{\+\_\+raio, }
+\item[{int}]{\+\_\+fillmodeC}
+\end{DoxyParamCaption}
+)}\hypertarget{classfigura_a1f5fa6ec7092552181e83725e43d7e23}{}\label{classfigura_a1f5fa6ec7092552181e83725e43d7e23}
+
+
+setparametroscirculo seta os parâmetros necessários do círculo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+xr} & é o ponto central do círculo no eixo \char`\"{}x\char`\"{}. \\
+\hline
+{\em \+\_\+yr} & é o ponto central do círculo no eixo \char`\"{}y\char`\"{}. \\
+\hline
+{\em \+\_\+raio} & é o raio da circunferência. \\
+\hline
+{\em \+\_\+fillmodeC} & define se o círculo é preenchido ou não. \\
+\hline
+\end{DoxyParams}
+\index{figura@{figura}!setparametrosreta@{setparametrosreta}}
+\index{setparametrosreta@{setparametrosreta}!figura@{figura}}
+\subsubsection[{\texorpdfstring{setparametrosreta(int \+\_\+x, int \+\_\+y, int \+\_\+x2, int \+\_\+y2)}{setparametrosreta(int _x, int _y, int _x2, int _y2)}}]{\setlength{\rightskip}{0pt plus 5cm}void figura\+::setparametrosreta (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+x, }
+\item[{int}]{\+\_\+y, }
+\item[{int}]{\+\_\+x2, }
+\item[{int}]{\+\_\+y2}
+\end{DoxyParamCaption}
+)}\hypertarget{classfigura_a9b64c9372d040df37dc71c61f148fd57}{}\label{classfigura_a9b64c9372d040df37dc71c61f148fd57}
+
+
+setparametrosreta seta os parâmetros necessários da reta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & é o ponto inicial no eixo \char`\"{}x\char`\"{}. \\
+\hline
+{\em \+\_\+y} & é o ponto inicial no eixo \char`\"{}y\char`\"{}. \\
+\hline
+{\em \+\_\+x2} & é o ponto final no eixo \char`\"{}x\char`\"{}. \\
+\hline
+{\em \+\_\+y2} & é o ponto final no eixo \char`\"{}x\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\index{figura@{figura}!setparametrosretangulo@{setparametrosretangulo}}
+\index{setparametrosretangulo@{setparametrosretangulo}!figura@{figura}}
+\subsubsection[{\texorpdfstring{setparametrosretangulo(int \+\_\+xr, int \+\_\+yr, int \+\_\+altura, int \+\_\+largura, int \+\_\+fillmode\+R)}{setparametrosretangulo(int _xr, int _yr, int _altura, int _largura, int _fillmodeR)}}]{\setlength{\rightskip}{0pt plus 5cm}void figura\+::setparametrosretangulo (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+xr, }
+\item[{int}]{\+\_\+yr, }
+\item[{int}]{\+\_\+altura, }
+\item[{int}]{\+\_\+largura, }
+\item[{int}]{\+\_\+fillmodeR}
+\end{DoxyParamCaption}
+)}\hypertarget{classfigura_a2a46e5a0a3e26b17da3c16067fb42ba0}{}\label{classfigura_a2a46e5a0a3e26b17da3c16067fb42ba0}
+
+
+setparametrosretangulo seta os parâmetros necessários do retângulo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+xr} & é o ponto inicial no eixo \char`\"{}x\char`\"{}. \\
+\hline
+{\em \+\_\+yr} & é o ponto inicial no eixo \char`\"{}y\char`\"{}. \\
+\hline
+{\em \+\_\+altura} & é a altura do retângulo. \\
+\hline
+{\em \+\_\+largura} & é a largura do retângulo. \\
+\hline
+{\em \+\_\+fillmodeR} & define se o retângulo é preenchido ou não. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+figura.\+h\item 
+figura.\+cpp\end{DoxyCompactItemize}

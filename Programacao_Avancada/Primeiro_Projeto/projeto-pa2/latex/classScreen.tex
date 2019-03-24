@@ -1,0 +1,166 @@
+\hypertarget{classScreen}{}\section{Screen Class Reference}
+\label{classScreen}\index{Screen@{Screen}}
+
+
+The \hyperlink{classScreen}{Screen} class Serve para criar a tela de impressão e para fazer operações com essa.  
+
+
+
+
+{\ttfamily \#include $<$screen.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classScreen_ac197328663f3a04f30d65f923df8f519}{set\+Screen} (int \+\_\+nlin, int \+\_\+ncol)
+\begin{DoxyCompactList}\small\item\em set\+Screen cria uma tela com \+\_\+nlin linhas e \+\_\+ncol colunas. \end{DoxyCompactList}\item 
+int \hyperlink{classScreen_a36c5ad5922aaead1d99a00111bb7a899}{get\+ScreenX} ()
+\begin{DoxyCompactList}\small\item\em get\+ScreenX resgata o número de colunas da tela de impressão. \end{DoxyCompactList}\item 
+int \hyperlink{classScreen_ab0897ac045a861b0d21b2c8899096605}{get\+ScreenY} ()
+\begin{DoxyCompactList}\small\item\em get\+ScreenY resgata o número de linhas da tela de impressão. \end{DoxyCompactList}\item 
+void \hyperlink{classScreen_ae6bea81c57a22d226507c3c26fa95ee0}{set\+Pixel} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pixel imprime o pixel setado no brush na posição \char`\"{}x\char`\"{} e \char`\"{}y\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classScreen_a35e74266b2a04e37b354ceff7a5f1031}{clear} ()\hypertarget{classScreen_a35e74266b2a04e37b354ceff7a5f1031}{}\label{classScreen_a35e74266b2a04e37b354ceff7a5f1031}
+
+\begin{DoxyCompactList}\small\item\em clear reseta a matriz, deixando-\/a vazia novamente. \end{DoxyCompactList}\item 
+void \hyperlink{classScreen_aebc4eb6cb5acf15a0f04c1494622ab23}{set\+Brush} (char \+\_\+brush)
+\begin{DoxyCompactList}\small\item\em set\+Brush seta o caractere definido pelo usuário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries nlin}\hypertarget{classScreen_a5b5eccb332ec4d5a5610283ef29a5164}{}\label{classScreen_a5b5eccb332ec4d5a5610283ef29a5164}
+
+\item 
+int {\bfseries ncol}\hypertarget{classScreen_a5973f5b14ee8dcf5f082fa66ceb23a5e}{}\label{classScreen_a5973f5b14ee8dcf5f082fa66ceb23a5e}
+
+\item 
+char {\bfseries brush}\hypertarget{classScreen_aa20056bc34de1832f8024764ac9c0e82}{}\label{classScreen_aa20056bc34de1832f8024764ac9c0e82}
+
+\item 
+vector$<$ vector$<$ char $>$ $>$ {\bfseries mat}\hypertarget{classScreen_a25e00af60d7e87b9b31cacb050c602d3}{}\label{classScreen_a25e00af60d7e87b9b31cacb050c602d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classScreen_aab6a2880746bfe1b7964817cc8f0989e}{operator$<$$<$} (ostream \&os, \hyperlink{classScreen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ é a sobrecarga do operado \char`\"{}$<$$<$\char`\"{} que serve, tanto para imprimir a matriz diretamente como também para escrevê-\/la em um arquivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classScreen}{Screen} class Serve para criar a tela de impressão e para fazer operações com essa. 
+
+\subsection{Member Function Documentation}
+\index{Screen@{Screen}!get\+ScreenX@{get\+ScreenX}}
+\index{get\+ScreenX@{get\+ScreenX}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{get\+Screen\+X()}{getScreenX()}}]{\setlength{\rightskip}{0pt plus 5cm}int Screen\+::get\+ScreenX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classScreen_a36c5ad5922aaead1d99a00111bb7a899}{}\label{classScreen_a36c5ad5922aaead1d99a00111bb7a899}
+
+
+get\+ScreenX resgata o número de colunas da tela de impressão. 
+
+\begin{DoxyReturn}{Returns}
+número de colunas da tela de impressão. 
+\end{DoxyReturn}
+\index{Screen@{Screen}!get\+ScreenY@{get\+ScreenY}}
+\index{get\+ScreenY@{get\+ScreenY}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{get\+Screen\+Y()}{getScreenY()}}]{\setlength{\rightskip}{0pt plus 5cm}int Screen\+::get\+ScreenY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classScreen_ab0897ac045a861b0d21b2c8899096605}{}\label{classScreen_ab0897ac045a861b0d21b2c8899096605}
+
+
+get\+ScreenY resgata o número de linhas da tela de impressão. 
+
+\begin{DoxyReturn}{Returns}
+número de linhas da tela de impressão. 
+\end{DoxyReturn}
+\index{Screen@{Screen}!set\+Brush@{set\+Brush}}
+\index{set\+Brush@{set\+Brush}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{set\+Brush(char \+\_\+brush)}{setBrush(char _brush)}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::set\+Brush (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+brush}
+\end{DoxyParamCaption}
+)}\hypertarget{classScreen_aebc4eb6cb5acf15a0f04c1494622ab23}{}\label{classScreen_aebc4eb6cb5acf15a0f04c1494622ab23}
+
+
+set\+Brush seta o caractere definido pelo usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+brush} & novo caractere definido pelo usuário. \\
+\hline
+\end{DoxyParams}
+\index{Screen@{Screen}!set\+Pixel@{set\+Pixel}}
+\index{set\+Pixel@{set\+Pixel}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{set\+Pixel(int x, int y)}{setPixel(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::set\+Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classScreen_ae6bea81c57a22d226507c3c26fa95ee0}{}\label{classScreen_ae6bea81c57a22d226507c3c26fa95ee0}
+
+
+set\+Pixel imprime o pixel setado no brush na posição \char`\"{}x\char`\"{} e \char`\"{}y\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & é a posição \char`\"{}x\char`\"{} do pixel a ser imprimido na tela. \\
+\hline
+{\em y} & é a posição \char`\"{}y\char`\"{} do pixel a ser imprimido na tela. \\
+\hline
+\end{DoxyParams}
+\index{Screen@{Screen}!set\+Screen@{set\+Screen}}
+\index{set\+Screen@{set\+Screen}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{set\+Screen(int \+\_\+nlin, int \+\_\+ncol)}{setScreen(int _nlin, int _ncol)}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::set\+Screen (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+nlin, }
+\item[{int}]{\+\_\+ncol}
+\end{DoxyParamCaption}
+)}\hypertarget{classScreen_ac197328663f3a04f30d65f923df8f519}{}\label{classScreen_ac197328663f3a04f30d65f923df8f519}
+
+
+set\+Screen cria uma tela com \+\_\+nlin linhas e \+\_\+ncol colunas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nlin} & é o número de linhas da tela de impressão. \\
+\hline
+{\em \+\_\+ncol} & é o número de colunas da tela de impressão. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Screen@{Screen}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{{\bf Screen} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classScreen_aab6a2880746bfe1b7964817cc8f0989e}{}\label{classScreen_aab6a2880746bfe1b7964817cc8f0989e}
+
+
+operator $<$$<$ é a sobrecarga do operado \char`\"{}$<$$<$\char`\"{} que serve, tanto para imprimir a matriz diretamente como também para escrevê-\/la em um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & é o fluxo de saída. \\
+\hline
+{\em t} & é um objeto da classe \hyperlink{classScreen}{Screen}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+outro valor de saída. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+screen.\+h\item 
+screen.\+cpp\end{DoxyCompactItemize}
